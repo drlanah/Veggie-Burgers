@@ -1,0 +1,21 @@
+{ {#if devoured} }
+<li>
+    <div>
+        {{id}}.
+        {{name}}
+    </div>
+    <div><button class="change-devour" data-id="{{id}}" data-newdevour="{{devoured}}">
+            Devour
+        </button>
+    </div>
+</li>
+{{else}}
+<li>
+    <div>
+        {{id}}.
+        {{name}}
+    </div>
+    <div><button class="delete-burger" data-id="{{this.id}}">Delete Burger</button>
+    </div>
+</li>
+{{/if}}
