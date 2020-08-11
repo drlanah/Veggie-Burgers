@@ -25,7 +25,6 @@ function objToSql(ob) {
   return arr.toString();
 }
 
-// CRUD functions
 var orm = {
   all: function (tableInput, cb) {
     var queryString = "SELECT * FROM " + tableInput + ";";
